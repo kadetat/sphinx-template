@@ -53,4 +53,4 @@ subqueries and window functions. From this talk I can use his many examples of
 queries he makes using Django ORM and show how raw SQL code is not needed to
 access data from your database.
 
-.. [#f5] Ljødal, S. (2019) "`Pushing the ORM to its limits." <https://2019.djangocon.eu/talks/pushing-the-orm-to-its-limits/>`_". DjangoCon 2019, Copenhagen, Denmark.
+.. [#f5] Ljødal, S. (2019) "`Pushing the ORM to its limits." <https://2019.djangocon.eu/talks/pushing-the-orm-to-its-limits/>`_" DjangoCon 2019, Copenhagen, Denmark.
