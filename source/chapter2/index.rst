@@ -1,5 +1,5 @@
-Django: Web Development with Python
-===================================
+Chapter 2
+=========
 
 This book is a general overview over Django and the many different libraries
 and features the Django has and can perform. The book starts out with how to

@@ -1,5 +1,5 @@
-Grehan, Rick
-============
+Chapter 1
+=========
 
 This article over Django was written awhile ago, but covers a general
 overview of the Django framework and outlines many key parts. It talks about
