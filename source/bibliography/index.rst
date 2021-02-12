@@ -2,7 +2,8 @@ Annotated Bibliography
 ======================
 
 This blog post does a really good job comparing the two most popular python web
-frameworks out there currently, Django and Flask. Written only a couple months
+frameworks out there currently, Django and Flask.
+Written only a couple months
 ago, it breaks down the two framework into numerous categories including various
 features, security, forms, flexibility, etc. It does a side by side comparison
 between the two frameworks inside each category and talks about the advantages
