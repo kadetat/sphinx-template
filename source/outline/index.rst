@@ -25,7 +25,7 @@ set up, the advantages of Django makes it the best python based framework to use
     * Not suited for small scale projects (Use source [#f2])
 
 * Intro to Various Django features which makes Django popular and gives
-    Django the advantage over other python frameworks
+  Django the advantage over other python frameworks
 
     * Framework
     * ORM
