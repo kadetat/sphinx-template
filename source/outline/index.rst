@@ -19,8 +19,8 @@ set up, the advantages of Django makes it the best python based framework to use
       (Include code samples and screen shots on set up)
     * Overview of other python based app set ups
 
-        * Talk about Flask setup and how much easier/faster it is
-            to set up(Use source [#f1])
+        * Talk about Flask setup and how much easier/faster it is to set up
+          (Use source [#f1])
 
     * Not suited for small scale projects (Use source [#f2])
 
