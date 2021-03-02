@@ -1,5 +1,5 @@
 Web Security
-================
+============
 
 Research Project
 Kade Tatkenhorst
@@ -11,5 +11,6 @@ Kade Tatkenhorst
    chapter1/index
    chapter2/index
    bibliography/index
+   outline/index
 
 
