@@ -56,7 +56,10 @@ set up, the advantages of Django makes it the best python based framework to use
 
 * ORM in Django (Use source [#f5])
 
+    * ORM is a Object Relational Mapper
     * Allows queries on databases without raw SQL
+    * Include and talk about cool figure in source 2 explaining ORM
+    * Speeds up web application development
     * Include an example from source 5 (Show code snippets)
 
 * Out of the box web security features (Use source [#f3])
@@ -82,7 +85,8 @@ set up, the advantages of Django makes it the best python based framework to use
 * Out of the box admin panel ([#f1] and [#f2])
 
     * Is a user interface for managing data for CRUD applications
-    * No extra code is needed
+    * No extra code is needed to do CRUD activities
+    * Not included in other python frameworks
 
 
 .. [#f1] Herman, M. (2020, October 28). "`Django vs. Flask in 2020: Which Framework to Choose. <https://testdriven.io/blog/django-vs-flask/>`_" Test Driven Labs.
