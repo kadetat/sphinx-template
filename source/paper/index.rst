@@ -140,4 +140,4 @@ that we will go over.
 .. [#f4] Dauzon, S., Bendoraitis, A., & Ravindran, A. (2016). "`Django: Web Development with Python. <https://search.ebscohost.com/login.aspx?direct=true&AuthType=ip,url,uid,cookie&db=e000xna&AN=1345264&site=ehost-live&scope=site>`_" Packt Publishing.
 .. [#f5] Ljødal, S. (2019) "`Pushing the ORM to its limits. <https://2019.djangocon.eu/talks/pushing-the-orm-to-its-limits/>`_" DjangoCon 2019, Copenhagen, Denmark.
 .. [#f6] "`Security in Django. <https://docs.djangoproject.com/en/2.2/topics/security/>`_" Django Software Foundation.
-.. [#f7] Python Software Foundation. (2019). "`Python Developers Survey.<https://www.jetbrains.com/lp/python-developers-survey-2019/>`_" JetBrains.
+.. [#f7] Python Software Foundation. (2019). "`Python Developers Survey. <https://www.jetbrains.com/lp/python-developers-survey-2019/>`_" JetBrains.
