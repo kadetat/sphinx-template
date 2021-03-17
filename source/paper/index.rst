@@ -1,5 +1,5 @@
-Django Paper Outline
-====================
+Django Paper
+============
 
 **Thesis:** Django is a popular web application due to its framework and
 out-of-the-box features which allows Django to excel in building bigger,
