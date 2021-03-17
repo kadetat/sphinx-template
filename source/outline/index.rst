@@ -2,7 +2,8 @@ Django Paper Outline
 ====================
 
 **Thesis:** A Django web application is time consuming to set up, but once it is
-set up, the advantages of Django makes it the best python based framework to use.
+set up, the Django framework and out-of-the-box features make the long set up
+worth it.
 
 * What is Django?
 
@@ -15,7 +16,7 @@ set up, the advantages of Django makes it the best python based framework to use
 * Django takes time to set up
 
     * Main Disadvantage of Django is long setup
-    * Short tutorial on setting up "Hello World" (Use source [#f4] )
+    * Overview on setting up "Hello World" (Use source [#f4] )
       (Include code samples and screen shots on set up)
     * Overview of other python based app set ups
 

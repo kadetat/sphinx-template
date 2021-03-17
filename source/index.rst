@@ -12,5 +12,6 @@ Kade Tatkenhorst
    chapter2/index
    bibliography/index
    outline/index
+   paper/index
 
 
