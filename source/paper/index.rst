@@ -58,9 +58,8 @@ frameworks, including Tornado, CherryPy, and Bottle, recorded less than 5% of
 developers (See figure below [#f7]_).
 
 .. image:: djangoPic.JPG
-   :width: 100px
+   :width: 50px
    :height: 50px
-   :scale: 50 %
    :alt: Web Application, 2019 JetBrains Python Developers Survey
 
 
