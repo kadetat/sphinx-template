@@ -57,7 +57,7 @@ before and 48% of developers recorded using Flask before. All other Python web
 frameworks, including Tornado, CherryPy, and Bottle, recorded less than 5% of
 developers (See figure below [#f7]_).
 
-.. figure:: djangoPic.JPG
+.. image:: djangoPic.jpg
    :width: 100px
    :height: 50px
    :scale: 50 %
