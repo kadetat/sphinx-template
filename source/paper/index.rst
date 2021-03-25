@@ -59,6 +59,7 @@ developers (See figure below [#f7]_).
 
 .. figure:: djangoPic.JPG
    :width: 40%
+   :align: center
 
     Web Application, 2019 JetBrains Python Developers Survey
 
