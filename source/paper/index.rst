@@ -57,11 +57,11 @@ before and 48% of developers recorded using Flask before. All other Python web
 frameworks, including Tornado, CherryPy, and Bottle, recorded less than 5% of
 developers (See figure below [#f7]_).
 
-.. image:: djangoPic.jpg
+.. image:: djangoPic.JPG
    :width: 100px
    :height: 50px
    :scale: 50 %
-   :alt: alternate text
+   :alt: Web Application, 2019 JetBrains Python Developers Survey
 
 
 * Intro to Various Django features which makes Django popular and gives
