@@ -62,7 +62,6 @@ developers (See figure below [#f7]_).
    :height: 50px
    :alt: Web Application, 2019 JetBrains Python Developers Survey
 
-
 * Intro to Various Django features which makes Django popular and gives
   Django the advantage over other Python frameworks
 
