@@ -58,7 +58,7 @@ frameworks, including Tornado, CherryPy, and Bottle, recorded less than 5% of
 developers (See figure below [#f7]_).
 
 .. image:: pythonwebapppic.PNG
-    :width: 5%
+    :width: 0%
 
 * Intro to Various Django features which makes Django popular and gives
   Django the advantage over other Python frameworks
