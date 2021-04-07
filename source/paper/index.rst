@@ -14,14 +14,6 @@ Introduction
     * Framework and out-of-the-box features
     * Why its good for complex projects
 
-* What is Django and how popular is it?
-
-    * Describe what Django is
-    * Talk about who uses Django (Use source [#f2]_)
-    * Talk popularity among other python web frameworks
-      (Use source [#f1]_ open source section)
-    * Quickly state other python frameworks
-
 What is Django and how popular is it?
 -------------------------------------
 
@@ -63,13 +55,6 @@ developers (See figure below [#f7]_).
 
     Web Application, 2019 JetBrains Python Developers Survey
 
-* Intro to Various Django features which makes Django popular and gives
-  Django the advantage over other Python frameworks
-
-    * Framework
-    * ORM
-    * Out of the box extra features
-
 So what makes Django a clear top 2 favorite in Python frameworks for developers?
 First, Django forces a consistent app structure (MVT) that we will quickly
 explain. Also, when looking into Django, you'll quickly find that Django has
@@ -82,26 +67,60 @@ that we will go over.
 Framework
 ---------
 
-    * MVT architecture (Show figure from source [#f2])
-    * Talk about models
+To use any of the cool Django plugins, Django forces you to use its MVT
+architecture. MVT, standing for the layers models, views, templates, is how Django
+organizes the web application. The three layers each control different parts of the
+web app, and each one is used independent from the others.
 
-        * Is a Python class
-        * Keeps your business logic
-        * Generally each model maps to one database table
+.. figure:: MVT.JPG
+   :width: 50%
+   :align: center
 
-    * Talk about views
+The model layer is in charge of keeping all the business logic that is in the
+web application. It is a python class, and contains fields for the data you need
+and methods for handling the data [#f2]_. Any data manipulation happens in the
+model layer, for example all create, read, update, delete (CRUD) activities
+takes place in the model layer.
 
-        * Accepts HTTP requests
-        * Applies the models/Python classes
-        * Provides HTTP responses or provides data to templates
+To enable the data manipulation that takes place in the model layer, each model
+is usually connected to a database. Generally, each model class is connected to
+one database table. A connection to a database is almost a requirement for any
+new web applications in today's world, and Django enables those connections in
+the model layer.
 
-    * Talk about templates
+Since a model is only a simple Python class, something needs to get the data
+once the model is done. Fetching the data from the model is the responsibility of
+the view layer. Generally the view layer accepts HTTP requests, fetches data
+from the model layer, and provides HTTP responses to clients [#f2]_.
 
-        * Is simply HTML code to show data
-        * Can be static or dynamic
+To call a view, it must be mapped to a URL. When a client goes to that URL, a
+view is called, and that view gives the correct HTTP response to the client [#f8]_.
+A view will also raise any exceptions, like a Http404 error when a requested URL
+can't be found.
 
-    * Can adjust visual part of app and logic separately
-    * Asynchronous Views
+To display the HTTP responses from the views, a template can be used. A template
+is part of the template layer, and is loaded in the view. A template is a file
+that contains html code to display data [#f2]_. A template can be static or dynamic,
+and can use "template inheritance" to allow your entire application to look
+similar without having to write the same HTML code over and over for each page [#f3]_ [#f8]_.
+
+There are a lot of advantages of Django's MVT structure. First, it allows
+developers to change the logic in the application and the visual part of the
+application separately. A developer can be confident that any logic changes won't
+change the visual side of the site, and vice-versa.
+
+A second advantage is Django apps all have a consistent structure. This allows
+teams running big web applications using Django to bring in different developers,
+and as long as those developers are experienced Django developers, they will be
+able to quickly orient themselves since all Django projects have consistent
+structure.
+
+A third advantage of the framework is it allows the web application to be easily
+pluggable, which is where Django really excels at [#f2]_. When installing
+Django, many of these plug-ins you need to build a web application
+are automatically installed, including an ORM,  a template library, web security
+features, an administration interface, and other support libraries and useful
+applications [#f3]_.
 
 * ORM in Django (Use source [#f5])
 
@@ -110,6 +129,31 @@ Framework
     * Include and talk about cool figure in source 2 explaining ORM
     * Speeds up web application development
     * Include an example from source 5 (Show code snippets)
+
+The first plug-in that is a real strength of Django is its Object Relational
+Mapper (ORM). Automatically installed alongside Django, the ORM helps
+developers interact with the database by automatically transferring the data
+stored in databases into objects [#f2]_.
+
+.. figure:: ORM.JPG
+   :width: 50%
+   :align: center
+
+An ability of using the built-in ORM is that it allows developers to do queries
+on databases without using raw SQL. To do this, the query is run on the stored
+objects and not by fetching the data from the database [#f5]_. An example of a
+query using the ORM is below [#f5]_.
+
+.. figure:: ORMcode2.JPG
+   :width: 50%
+   :align: center
+
+Here we are doing a subquery on the small data table at the top of the image.
+Our goal of the query is to find the total revenue on weekdays 1 and 7. The
+subquery finds all the rows in the table that occurred on weekdays 1 or 7 using the
+.filter() method. Then, using the .values_list() method, it sums up all the
+values in the lines_gross_amount column in the subquery. At the bottom, we
+call the first row of the query, and get the expected result of 10.00 [#f5]_.
 
 * Out of the box web security features (Use source [#f3])
 
@@ -155,3 +199,4 @@ Framework
 .. [#f5] Ljødal, S. (2019) "`Pushing the ORM to its limits. <https://2019.djangocon.eu/talks/pushing-the-orm-to-its-limits/>`_" DjangoCon 2019, Copenhagen, Denmark.
 .. [#f6] "`Security in Django. <https://docs.djangoproject.com/en/2.2/topics/security/>`_" Django Software Foundation.
 .. [#f7] Python Software Foundation. (2019). "`Python Developers Survey. <https://www.jetbrains.com/lp/python-developers-survey-2019/>`_" JetBrains.
+.. [#f8] "`Django at a glance. <https://docs.djangoproject.com/en/2.2/intro/overview/#write-your-views>`_" Django Software Foundation.
