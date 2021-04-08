@@ -180,7 +180,7 @@ Django also provides a built in session management system, which handles
 server-side session information and abstracting the passing of cookies as
 mechanisms for session support. It also can support the concepts of users and
 groups [#f3]_. These functionalities are supported by the models.user class
-which comes with Django out-of-the-box. The fields in the User object includes [#f6]_:
+which comes with Django out-of-the-box. The fields in the User object includes [#f4]_:
 
     * username (required)
     * first_name (optional)
@@ -195,30 +195,54 @@ which comes with Django out-of-the-box. The fields in the User object includes [
     * last_login
     * date_joined
 
-The models.user class also has methods [#f6]_
+The models.user class also has methods: [#f4]_
 
     * get_username()
     * set_password(raw_password)
+
+        * Sets user’s password to the raw string, taking care of the password hashing.
+
     * check_password(raw_password)
+
+        * Returns True if the raw string is the correct hashed password
+
     * has_perm(perm)
     * a lot more!
 
-* Out of the box admin panel ([#f1] and [#f2])
+Admin Panel
+-----------
 
-    * Is a user interface for managing data for CRUD applications
-    * No extra code is needed to do CRUD activities
-    * Not included in other Python frameworks
+One of the most powerful parts of Django is its built in admin panel, which really
+makes Django shine [#f1]_. The admin panel is a web application that provides an
+interface for the user to manage data. This allows developers to quickly perform
+CRUD operations without writing extra code. A couple lines of code in the setup
+enables this feature, allowing a quick setup of this powerful tool. A developer
+can also enable a login requirement to access the admin panel, and by default,
+a user must be a superuser to be able to gain access [#f9]_.
 
-* Django excels at building complex projects
+Django Excels at Building Complex Projects
+------------------------------------------
 
-    * Why Django excels
+As you can see, Django has a lot of cool features and abilities that can be
+plugged in with a couple clicks or couple lines of code. These abilities are
+what makes Django so popular, however, Django is not as popular for small scale
+applications. A disadvantage of Django is if a developer needs to make a static
+website or a simple chat site, Django is likely overkill, and the developer
+probably should use other python frameworks, such as Flask, instead [#f1]_ [#f2]_.
+However, if a developer is building a complex website, Django should be the
+leading choice of framework with its many advantages, including the many
+pluggable features (ORM, Admin Panel, Account Management, Security, and more),
+and the consistent Django architecture to allow a rollover of Django developers
+along the web application's lifespan.
 
-        * Framework
-        * admin panel
-        * Account management
-    * Quickly state why other frameworks aren't as good
+Conclusion
+----------
 
-* Conclusion
+
+
+
+Sources
+----------
 
 .. [#f1] Herman, M. (2020, October 28). "`Django vs. Flask in 2020: Which Framework to Choose. <https://testdriven.io/blog/django-vs-flask/>`_" Test Driven Labs.
 .. [#f2] Zublenko, E. "`Why Django is the Best Web Framework for Your Project. <https://steelkiwi.com/blog/why-django-best-web-framework-your-project/>`_" SteelKiwi INC.
@@ -228,3 +252,4 @@ The models.user class also has methods [#f6]_
 .. [#f6] "`Security in Django. <https://docs.djangoproject.com/en/2.2/topics/security/>`_" Django Software Foundation.
 .. [#f7] Python Software Foundation. (2019). "`Python Developers Survey. <https://www.jetbrains.com/lp/python-developers-survey-2019/>`_" JetBrains.
 .. [#f8] "`Django at a glance. <https://docs.djangoproject.com/en/2.2/intro/overview/#write-your-views>`_" Django Software Foundation.
+.. [#f9] "`The Django admin site. <https://docs.djangoproject.com/en/2.2/ref/contrib/admin/>`_" Django Software Foundation.
