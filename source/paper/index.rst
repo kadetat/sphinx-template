@@ -122,13 +122,8 @@ are automatically installed, including an ORM,  a template library, web security
 features, an administration interface, and other support libraries and useful
 applications [#f3]_.
 
-* ORM in Django (Use source [#f5])
-
-    * ORM is a Object Relational Mapper
-    * Allows queries on databases without raw SQL
-    * Include and talk about cool figure in source 2 explaining ORM
-    * Speeds up web application development
-    * Include an example from source 5 (Show code snippets)
+ORM
+---
 
 The first plug-in that is a real strength of Django is its Object Relational
 Mapper (ORM). Automatically installed alongside Django, the ORM helps
@@ -155,18 +150,27 @@ subquery finds all the rows in the table that occurred on weekdays 1 or 7 using 
 values in the lines_gross_amount column in the subquery. At the bottom, we
 call the first row of the query, and get the expected result of 10.00 [#f5]_.
 
-* Out of the box web security features (Use source [#f3])
+Web Security
+------------
 
-    * Security against most common web-attacks
-    * cross-site scripting
+Another out-of-the-box feature included with the installation of Django is web
+security for their web applications. A developer can enable a couple of
+features that helps secure their application against most common web-attacks [#f3]_.
+The first web-attack Django protects against is cross-site scripting, which can
+allow a user to inject malicious scripts into the browsers of other users. Django
+protects against these attacks by having Django templates automatically escaping
+specific characters which are dangerous to HTML [#f6]_.
 
-        * Django templates escape dangerous characters
+Another common web-attack Django protects against is cross-site request forgery.
+This type of attack lets a malicious user to perform actions using the credentials
+of another unknowing user. When enabled and used correctly, Django can protect
+against this attack by checking for a cookie in each POST request [#f6]_.
 
-    * cross-site request forgeries
-
-        * Works by checking for a secret (through a cookie) in each POST request
-
-    * SQL-injection
+The third common web-attack Django protects against in SQL injection. SQL
+injection occurs when a malicious user can somehow execute SQL code on the
+web application's database. Django protects against this attack by constructing
+Django querysets using query parameterization [#f6]_. Django allows the developers the
+ability to write raw SQL but it should only be used if absolutely necessary.
 
 
 * Out of the box Account management & Authentication ([#f1] and [#f3])
