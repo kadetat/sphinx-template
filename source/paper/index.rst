@@ -173,11 +173,35 @@ Django querysets using query parameterization [#f6]_. Django allows the develope
 ability to write raw SQL but it should only be used if absolutely necessary.
 
 
-* Out of the box Account management & Authentication ([#f1] and [#f3])
+Account Management & Authentication
+-----------------------------------
 
-    * Log-ins and log-outs
-    * Web apps requires authentication to know who you are
-    * Web apps requires authorization to know what you are allowed to do/see
+Django also provides a built in session management system, which handles
+server-side session information and abstracting the passing of cookies as
+mechanisms for session support. It also can support the concepts of users and
+groups [#f3]_. These functionalities are supported by the models.user class
+which comes with Django out-of-the-box. The fields in the User object includes [#f6]_:
+
+    * username (required)
+    * first_name (optional)
+    * last_name (optional)
+    * email (optional)
+    * password (required, stores a hash of the password)
+    * groups
+    * user_permissions
+    * is_staff
+    * is_active
+    * is_superuser
+    * last_login
+    * date_joined
+
+The models.user class also has methods [#f6]_
+
+    * get_username()
+    * set_password(raw_password)
+    * check_password(raw_password)
+    * has_perm(perm)
+    * a lot more!
 
 * Out of the box admin panel ([#f1] and [#f2])
 
@@ -199,7 +223,7 @@ ability to write raw SQL but it should only be used if absolutely necessary.
 .. [#f1] Herman, M. (2020, October 28). "`Django vs. Flask in 2020: Which Framework to Choose. <https://testdriven.io/blog/django-vs-flask/>`_" Test Driven Labs.
 .. [#f2] Zublenko, E. "`Why Django is the Best Web Framework for Your Project. <https://steelkiwi.com/blog/why-django-best-web-framework-your-project/>`_" SteelKiwi INC.
 .. [#f3] Grehan, R. (2011, August 10). "`Pillars of Python: Django Web framework; Django combines excellent backward compatibility, good admin tools, and a focus on developer ease <https://link.gale.com/apps/doc/A263931054/GPS?u=simpsoncoll&sid=GPS&xid=22b37d98>`_" InfoWorld.com.
-.. [#f4] Dauzon, S., Bendoraitis, A., & Ravindran, A. (2016). "`Django: Web Development with Python. <https://search.ebscohost.com/login.aspx?direct=true&AuthType=ip,url,uid,cookie&db=e000xna&AN=1345264&site=ehost-live&scope=site>`_" Packt Publishing.
+.. [#f4] "`django.contrib.auth. <https://docs.djangoproject.com/en/2.2/ref/contrib/auth/>`_" Django Software Foundation.
 .. [#f5] Ljødal, S. (2019) "`Pushing the ORM to its limits. <https://2019.djangocon.eu/talks/pushing-the-orm-to-its-limits/>`_" DjangoCon 2019, Copenhagen, Denmark.
 .. [#f6] "`Security in Django. <https://docs.djangoproject.com/en/2.2/topics/security/>`_" Django Software Foundation.
 .. [#f7] Python Software Foundation. (2019). "`Python Developers Survey. <https://www.jetbrains.com/lp/python-developers-survey-2019/>`_" JetBrains.
