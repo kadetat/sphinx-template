@@ -1,18 +1,17 @@
 Django Paper
 ============
 
-**Thesis:** Django is a popular web application due to its framework and
-out-of-the-box features which allows Django to excel in building bigger,
-complex projects.
-
-
-Introduction
-
-    * How are big complicated web applications like Instagram and Spotify built?
-    * Thesis
-    * Popularity
-    * Framework and out-of-the-box features
-    * Why its good for complex projects
+Have you ever wondered how big, complicated web applications like Instagram and
+Spotify are built? Both Instagram and Spotify, and a lot other web applications, are
+actually built using the same framework, Django. Django is a popular web
+framework due to its architecture and out-of-the-box features which allows
+Django to excel in building bigger,complex projects. Django is considered among
+the top two most popular python web frameworks, and used by developers across
+the world. Django forces a consistent MVT structure for all Django projects and
+has out-of-the-box features, including ORM, web security, account management,
+and an admin panel. Finally, Django's framework and features puts Django at a
+disadvantage when building small applications, but allows Django to
+really excel at building large, complex projects.
 
 What is Django and how popular is it?
 -------------------------------------
@@ -64,8 +63,8 @@ plug it in. If a developer needs an admin panel for CRUD activities, they can
 just plug it in. Django has a lot of features that are completely pluggable
 that we will go over.
 
-Framework
----------
+MVT Architecture
+----------------
 
 To use any of the cool Django plugins, Django forces you to use its MVT
 architecture. MVT, standing for the layers models, views, templates, is how Django
@@ -220,8 +219,8 @@ enables this feature, allowing a quick setup of this powerful tool. A developer
 can also enable a login requirement to access the admin panel, and by default,
 a user must be a superuser to be able to gain access [#f9]_.
 
-Django Excels at Building Complex Projects
-------------------------------------------
+Building Complex Projects
+-------------------------
 
 As you can see, Django has a lot of cool features and abilities that can be
 plugged in with a couple clicks or couple lines of code. These abilities are
@@ -237,8 +236,14 @@ along the web application's lifespan.
 
 Conclusion
 ----------
-
-
+One of the most popular python web frameworks in the world, Django has
+built some of the most used web applications right now. Django is a popular web
+framework due to its architecture and out-of-the-box features which allows
+Django to excel in building bigger,complex projects. Used by developers across
+the world, Django forces a consistent MVT structure for all Django projects and
+has out-of-the-box features, including ORM, web security, account management,
+and an admin panel. Django is probably an overkill on features when building
+small applications, but Django really excels at building large, complex projects.
 
 
 Sources
