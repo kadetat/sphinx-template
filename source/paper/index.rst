@@ -3,24 +3,22 @@ The Advantages of Django
 
 Have you ever wondered how big, complicated web applications like Instagram and
 Spotify are built? Instagram, Spotify, and a lot other web applications are
-built using the same framework, Django. Django is a popular web
-framework due to its architecture and out-of-the-box features which allows
-Django to excel in building bigger, complex projects. Django is considered among
-the top two most popular Python web frameworks and used by developers across
-the world. Django forces a consistent Model View Template (MVT) structure for all
-Django projects and
-has out-of-the-box features, including Object Relational
-Mapper (ORM), web security, account management,
-and an admin panel. While, Django is at a
-disadvantage when building small applications, Django
-really excels at building large, complex projects.
+built using the same framework. Django is a popular web framework with its
+architecture and out-of-the-box features which allows building bigger,
+complex projects. Django is considered among the top two most popular Python
+web frameworks and used by developers across the world. Django forces a
+consistent Model View Template (MVT) structure for all projects and
+has out-of-the-box features, including Object Relational Mapper (ORM),
+web security, account management, and an admin panel. While, Django is at a
+disadvantage when building small applications, it excels at building large,
+complex projects.
 
 What is Django?
 ---------------
 
 Created in the early 2000's, Django is a Python-based web
-application that is gaining momentum in the industry. Created by
-a couple programmers working for a newspaper company in Kansas, Django has
+application that is gaining momentum in the industry. A couple programmers
+working for a newspaper company in Kansas developed the software that has
 turned into a huge publicly available Python framework used by over thousands
 of developers [#f2]_. It has the philosophy of being free and
 open-source, and has built popular websites used by people
@@ -29,10 +27,10 @@ everyday, including Pinterest, Instagram, The Washington Post, and Spotify [#f2]
 How Popular Is It?
 ------------------
 According to the 2019 JetBrains Python Developers Survey, Django is in the top
-two most popular Python web frameworks to use [#f1]_. One reason Django is one of
-the most popular Python frameworks is its strong open-source community. As of
-October 26th, 2020, the Django Github repository has over 2000 contributors and
-well over 500,000 dependencies to other repositories [#f1]_.
+two most popular Python web frameworks to use [#f1]_. One reason Django holds
+popularity is its strong open-source community. As of October 26th, 2020, the
+Django Github repository has over 2000 contributors and well over 500,000
+dependencies to other repositories [#f1]_.
 
 To compare numbers, Flask, another open-source Python web framework that came
 in the top spot in the 2019 JetBrains Python Developers Survey, has well over
@@ -58,9 +56,9 @@ developers (See figure below).
 
 What makes Django a clear top two favorite in Python frameworks for developers?
 First, Django forces a consistent app structure (MVT) that we will quickly
-explain. Also, when looking into Django, you'll quickly find that Django has
+explain. Also, when looking into Django, you'll find that there are
 a TON of features that are built into the framework and are pluggable whenever
-a developer needs it. If a developer needs account management, they can just
+a developer needs. If a developer needs account management, they can just
 plug it in. If a developer needs an admin panel for CRUD activities, they can
 just plug it in. Django has a lot of features that are completely pluggable
 that we will go over.
@@ -68,7 +66,7 @@ that we will go over.
 MVT Architecture
 ----------------
 
-To use any of the cool Django plugins, Django forces you to use its Model View
+To use any of the cool Django plugins, you are forced to use its Model View
 Template (MVT) architecture. MVT is how Django organizes the web application.
 The three layers each control different parts of the web app, and each one is
 used independent from the others.
@@ -83,13 +81,12 @@ The model layer is in charge of keeping all the business logic that is in the
 web application. It is a Python class, and contains fields for the data you need
 and methods for handling the data [#f2]_. Any data manipulation happens in the
 model layer, for example all create, read, update, delete (CRUD) activities
-takes place in the model layer.
+take place in the model layer.
 
-To enable the data manipulation that takes place in the model layer, each model
-is usually connected to a database. Generally, each model class is connected to
-one database table. A connection to a database is almost a requirement for any
-new web applications in today's world, and Django enables those connections in
-the model layer.
+To enable the data manipulation, each model is usually connected to a database.
+Generally, each model class is connected to one database table. A connection
+to a database is almost a requirement for any new web applications in today's
+world, and Django enables those connections in the model layer.
 
 Since a model is only a simple Python class, something needs to get the data
 once the model is done. Fetching the data from the model is the responsibility of
@@ -119,9 +116,9 @@ able to quickly orient themselves since all Django projects have consistent
 structure.
 
 A third advantage of the framework is it allows the web application to be easily
-pluggable, which is where Django really excels at [#f2]_. When installing
+pluggable, which is where Django really excels [#f2]_. When installing
 Django, many of these plug-ins you need to build a web application
-are automatically installed, including an ORM,  a template library, web security
+are automatically installed, including an ORM, a template library, web security
 features, an administration interface, and other support libraries and useful
 applications [#f3]_.
 
