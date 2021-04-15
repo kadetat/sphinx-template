@@ -149,15 +149,14 @@ query using the ORM is below [#f5]_.
 
 .. code-block:: Python
     :linenos:
-    +-----+------------+---------------------+
-    | id  | week_day   | lines_gross_amount  |
-    +=====+============+=====================+
-    | 1   | 7          |                7.5  |
-    +-----+------------+---------------------+
-    | 2   | 1          |                2.5  |
-    +-----+------------+---------------------+
-    | 3   | 3          |                2.0  |
-    +-----+------------+---------------------+
+    :caption: Example of query using the ORM [#f5]_.
+
+     id  | week_day   | lines_gross_amount  |
+    ------------------------------------------
+     1   | 7          |                7.5  |
+     2   | 1          |                2.5  |
+     3   | 3          |                2.0  |
+
 
     targets = SalesTargets.objects.annotate(
         weekend_revenue = Subquery(
@@ -173,7 +172,7 @@ query using the ORM is below [#f5]_.
     )
     >>> targets.first().weekend_revenue
     10.00
-    :caption: Example of query using the ORM [#f5]_.
+
 
 
 Here we are doing a subquery on the small data table at the top of the image.
