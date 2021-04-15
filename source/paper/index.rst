@@ -18,7 +18,7 @@ What is Django?
 
 .. sidebar:: Django logo
 
-  Django image
+  .. image:: django.png
 
 Created in the early 2000's, Django is a Python-based web
 application that is gaining momentum in the industry. A couple programmers
@@ -178,7 +178,7 @@ query using the ORM is below [#f5]_.
 Here we are doing a subquery on the small data table at the top of the image.
 Our goal of the query is to find the total revenue on weekdays 1 and 7. The
 subquery finds all the rows in the table that occurred on weekdays 1 or 7 using the
-``.filter()`` method. Then, using the .values_list() method, it sums up all the
+``.filter()`` method. Then, using the ``.values_list()`` method, it sums up all the
 values in the lines_gross_amount column in the subquery. At the bottom, we
 call the first row of the query, and get the expected result of 10.00 [#f5]_.
 
