@@ -179,7 +179,7 @@ Here we are doing a subquery on the small data table at the top of the image.
 Our goal of the query is to find the total revenue on weekdays 1 and 7. The
 subquery finds all the rows in the table that occurred on weekdays 1 or 7 using the
 ``.filter()`` method. Then, using the ``.values_list()`` method, it sums up all the
-values in the lines_gross_amount column in the subquery. At the bottom, we
+values in the lines_gross_amount column in the subquery. At line 20, we
 call the first row of the query, and get the expected result of 10.00 [#f5]_.
 
 Web Security
@@ -214,31 +214,31 @@ mechanisms for session support. It also can support the concepts of users and
 groups [#f3]_. These functionalities are supported by the models.user class
 which comes with Django out-of-the-box. The fields in the User object includes [#f4]_:
 
-    * username (required)
-    * first_name (optional)
-    * last_name (optional)
-    * email (optional)
-    * password (required, stores a hash of the password)
-    * groups
-    * user_permissions
-    * is_staff
-    * is_active
-    * is_superuser
-    * last_login
-    * date_joined
+    * ``username`` (required)
+    * ``first_name`` (optional)
+    * ``last_name`` (optional)
+    * ``email`` (optional)
+    * ``password`` (required, stores a hash of the password)
+    * ``groups``
+    * ``user_permissions``
+    * ``is_staff``
+    * ``is_active``
+    * ``is_superuser``
+    * ``last_login``
+    * ``date_joined``
 
 The models.user class also has methods: [#f4]_
 
-    * get_username()
-    * set_password(raw_password)
+    * ``get_username()``
+    * ``set_password(raw_password)``
 
         * Sets user’s password to the raw string, taking care of the password hashing.
 
-    * check_password(raw_password)
+    * ``check_password(raw_password)``
 
         * Returns True if the raw string is the correct hashed password
 
-    * has_perm(perm)
+    * ``has_perm(perm)``
     * a lot more!
 
 Admin Panel
