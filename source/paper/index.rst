@@ -1,34 +1,36 @@
-Django Paper
-============
+The Advantages of Django
+========================
 
 Have you ever wondered how big, complicated web applications like Instagram and
-Spotify are built? Both Instagram and Spotify, and a lot other web applications, are
-actually built using the same framework, Django. Django is a popular web
+Spotify are built? Instagram, Spotify, and a lot other web applications are
+built using the same framework, Django. Django is a popular web
 framework due to its architecture and out-of-the-box features which allows
-Django to excel in building bigger,complex projects. Django is considered among
-the top two most popular python web frameworks, and used by developers across
-the world. Django forces a consistent MVT structure for all Django projects and
-has out-of-the-box features, including ORM, web security, account management,
-and an admin panel. Finally, Django's framework and features puts Django at a
-disadvantage when building small applications, but allows Django to
-really excel at building large, complex projects.
+Django to excel in building bigger, complex projects. Django is considered among
+the top two most popular Python web frameworks and used by developers across
+the world. Django forces a consistent Model View Template (MVT) structure for all
+Django projects and
+has out-of-the-box features, including Object Relational
+Mapper (ORM), web security, account management,
+and an admin panel. While, Django is at a
+disadvantage when building small applications, Django
+really excels at building large, complex projects.
 
-What is Django and how popular is it?
--------------------------------------
+What is Django?
+---------------
 
-Created in the early 2000's, Django is a well regarded Python based web
+Created in the early 2000's, Django is a Python-based web
 application that is gaining momentum in the industry. Created by
 a couple programmers working for a newspaper company in Kansas, Django has
 turned into a huge publicly available Python framework used by over thousands
-of developers around the world [#f2]_. It has the philosophy of being free and
+of developers [#f2]_. It has the philosophy of being free and
 open-source, and has built popular websites used by people
 everyday, including Pinterest, Instagram, The Washington Post, and Spotify [#f2]_.
-Used by both big, popular websites and small, low volume websites, Django is
-one of the most popular Python frameworks in the world.
 
+How Popular Is It?
+------------------
 According to the 2019 JetBrains Python Developers Survey, Django is in the top
 two most popular Python web frameworks to use [#f1]_. One reason Django is one of
-the most popular python frameworks is its strong open-source community. As of
+the most popular Python frameworks is its strong open-source community. As of
 October 26th, 2020, the Django Github repository has over 2000 contributors and
 well over 500,000 dependencies to other repositories [#f1]_.
 
@@ -46,15 +48,14 @@ CherryPy, and Bottle. However, in the 2019 JetBrains Python Developers Survey,
 44% of developers that have used Python based frameworks recorded using Django
 before and 48% of developers recorded using Flask before. All other Python web
 frameworks, including Tornado, CherryPy, and Bottle, recorded less than 5% of
-developers (See figure below [#f7]_).
+developers (See figure below).
 
 .. figure:: djangoPic.JPG
    :width: 50%
    :align: center
+    Web Application, 2019 JetBrains Python Developers Survey [#f7]_
 
-    Web Application, 2019 JetBrains Python Developers Survey
-
-So what makes Django a clear top 2 favorite in Python frameworks for developers?
+What makes Django a clear top two favorite in Python frameworks for developers?
 First, Django forces a consistent app structure (MVT) that we will quickly
 explain. Also, when looking into Django, you'll quickly find that Django has
 a TON of features that are built into the framework and are pluggable whenever
@@ -66,17 +67,18 @@ that we will go over.
 MVT Architecture
 ----------------
 
-To use any of the cool Django plugins, Django forces you to use its MVT
-architecture. MVT, standing for the layers models, views, templates, is how Django
-organizes the web application. The three layers each control different parts of the
-web app, and each one is used independent from the others.
+To use any of the cool Django plugins, Django forces you to use its Model View
+Template (MVT) architecture. MVT is how Django organizes the web application.
+The three layers each control different parts of the web app, and each one is
+used independent from the others.
 
 .. figure:: MVT.JPG
    :width: 50%
    :align: center
+    MVT Architecture [#f2]_
 
 The model layer is in charge of keeping all the business logic that is in the
-web application. It is a python class, and contains fields for the data you need
+web application. It is a Python class, and contains fields for the data you need
 and methods for handling the data [#f2]_. Any data manipulation happens in the
 model layer, for example all create, read, update, delete (CRUD) activities
 takes place in the model layer.
@@ -132,6 +134,7 @@ stored in databases into objects [#f2]_.
 .. figure:: ORM.JPG
    :width: 50%
    :align: center
+    ORM Basics [#f2]_
 
 An ability of using the built-in ORM is that it allows developers to do queries
 on databases without using raw SQL. To do this, the query is run on the stored
@@ -145,7 +148,7 @@ query using the ORM is below [#f5]_.
 Here we are doing a subquery on the small data table at the top of the image.
 Our goal of the query is to find the total revenue on weekdays 1 and 7. The
 subquery finds all the rows in the table that occurred on weekdays 1 or 7 using the
-.filter() method. Then, using the .values_list() method, it sums up all the
+`.filter()` method. Then, using the .values_list() method, it sums up all the
 values in the lines_gross_amount column in the subquery. At the bottom, we
 call the first row of the query, and get the expected result of 10.00 [#f5]_.
 
@@ -227,7 +230,7 @@ plugged in with a couple clicks or couple lines of code. These abilities are
 what makes Django so popular, however, Django is not as popular for small scale
 applications. A disadvantage of Django is if a developer needs to make a static
 website or a simple chat site, Django is likely overkill, and the developer
-probably should use other python frameworks, such as Flask, instead [#f1]_ [#f2]_.
+probably should use other Python frameworks, such as Flask, instead [#f1]_ [#f2]_.
 However, if a developer is building a complex website, Django should be the
 leading choice of framework with its many advantages, including the many
 pluggable features (ORM, Admin Panel, Account Management, Security, and more),
@@ -236,7 +239,7 @@ along the web application's lifespan.
 
 Conclusion
 ----------
-One of the most popular python web frameworks in the world, Django has
+One of the most popular Python web frameworks in the world, Django has
 built some of the most used web applications right now. Django is a popular web
 framework due to its architecture and out-of-the-box features which allows
 Django to excel in building bigger,complex projects. Used by developers across
@@ -252,9 +255,9 @@ Sources
 .. [#f1] Herman, M. (2020, October 28). "`Django vs. Flask in 2020: Which Framework to Choose. <https://testdriven.io/blog/django-vs-flask/>`_" Test Driven Labs.
 .. [#f2] Zublenko, E. "`Why Django is the Best Web Framework for Your Project. <https://steelkiwi.com/blog/why-django-best-web-framework-your-project/>`_" SteelKiwi INC.
 .. [#f3] Grehan, R. (2011, August 10). "`Pillars of Python: Django Web framework; Django combines excellent backward compatibility, good admin tools, and a focus on developer ease <https://link.gale.com/apps/doc/A263931054/GPS?u=simpsoncoll&sid=GPS&xid=22b37d98>`_" InfoWorld.com.
-.. [#f4] "`django.contrib.auth. <https://docs.djangoproject.com/en/2.2/ref/contrib/auth/>`_" Django Software Foundation.
+.. [#f4] "`django.contrib.auth. <https://docs.djangoproject.com/en/2.2/ref/contrib/auth/>`_" Django Software Foundation. April 8th, 2021
 .. [#f5] Ljødal, S. (2019) "`Pushing the ORM to its limits. <https://2019.djangocon.eu/talks/pushing-the-orm-to-its-limits/>`_" DjangoCon 2019, Copenhagen, Denmark.
-.. [#f6] "`Security in Django. <https://docs.djangoproject.com/en/2.2/topics/security/>`_" Django Software Foundation.
+.. [#f6] "`Security in Django. <https://docs.djangoproject.com/en/2.2/topics/security/>`_" Django Software Foundation. April 8th, 2021
 .. [#f7] Python Software Foundation. (2019). "`Python Developers Survey. <https://www.jetbrains.com/lp/python-developers-survey-2019/>`_" JetBrains.
-.. [#f8] "`Django at a glance. <https://docs.djangoproject.com/en/2.2/intro/overview/#write-your-views>`_" Django Software Foundation.
-.. [#f9] "`The Django admin site. <https://docs.djangoproject.com/en/2.2/ref/contrib/admin/>`_" Django Software Foundation.
+.. [#f8] "`Django at a glance. <https://docs.djangoproject.com/en/2.2/intro/overview/#write-your-views>`_" Django Software Foundation. April 8th, 2021
+.. [#f9] "`The Django admin site. <https://docs.djangoproject.com/en/2.2/ref/contrib/admin/>`_" Django Software Foundation. April 8th, 2021
