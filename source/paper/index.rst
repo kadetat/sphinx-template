@@ -16,6 +16,10 @@ complex projects.
 What is Django?
 ---------------
 
+.. sidebar:: Django logo
+
+  blah blah
+
 Created in the early 2000's, Django is a Python-based web
 application that is gaining momentum in the industry. A couple programmers
 working for a newspaper company in Kansas developed the software that has
@@ -141,14 +145,40 @@ on databases without using raw SQL. To do this, the query is run on the stored
 objects and not by fetching the data from the database [#f5]_. An example of a
 query using the ORM is below [#f5]_.
 
-.. figure:: ORMcode2.JPG
-   :width: 50%
-   :align: center
++-----+------------+---------------------+
+| id  | week_day   | lines_gross_amount  |
++=====+============+=====================+
+| 1   | 7          |                7.5  |
++-----+------------+---------------------+
+| 2   | 1          |                2.5  |
++-----+------------+---------------------+
+| 3   | 3          |                2.0  |
++-----+------------+---------------------+
+
+.. code-block:: Python
+    :linenos:
+    :caption: Example of query using the ORM [#f5]_.
+
+    targets = SalesTargets.objects.annotate(
+        weekend_revenue = Subquery(
+            Order.objects.filter(
+                created_at_week_day_in=(7,1),
+            ).values_list(
+                Func(
+                    'lines_gross_amount',
+                    function='SUM',
+                ),
+            )
+        ),
+    )
+    >>> targets.first().weekend_revenue
+    10.00
+
 
 Here we are doing a subquery on the small data table at the top of the image.
 Our goal of the query is to find the total revenue on weekdays 1 and 7. The
 subquery finds all the rows in the table that occurred on weekdays 1 or 7 using the
-`.filter()` method. Then, using the .values_list() method, it sums up all the
+``.filter()`` method. Then, using the .values_list() method, it sums up all the
 values in the lines_gross_amount column in the subquery. At the bottom, we
 call the first row of the query, and get the expected result of 10.00 [#f5]_.
 
