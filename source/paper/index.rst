@@ -18,7 +18,7 @@ What is Django?
 
 .. sidebar:: Django logo
 
-  blah blah
+  Django image
 
 Created in the early 2000's, Django is a Python-based web
 application that is gaining momentum in the industry. A couple programmers
