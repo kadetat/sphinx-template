@@ -53,7 +53,8 @@ developers (See figure below).
 .. figure:: djangoPic.JPG
    :width: 50%
    :align: center
-    Web Application, 2019 JetBrains Python Developers Survey [#f7]_
+
+   Web Application, 2019 JetBrains Python Developers Survey [#f7]_
 
 What makes Django a clear top two favorite in Python frameworks for developers?
 First, Django forces a consistent app structure (MVT) that we will quickly
@@ -75,7 +76,8 @@ used independent from the others.
 .. figure:: MVT.JPG
    :width: 50%
    :align: center
-    MVT Architecture [#f2]_
+
+   MVT Architecture [#f2]_
 
 The model layer is in charge of keeping all the business logic that is in the
 web application. It is a Python class, and contains fields for the data you need
@@ -134,7 +136,8 @@ stored in databases into objects [#f2]_.
 .. figure:: ORM.JPG
    :width: 50%
    :align: center
-    ORM Basics [#f2]_
+
+   ORM Basics [#f2]_
 
 An ability of using the built-in ORM is that it allows developers to do queries
 on databases without using raw SQL. To do this, the query is run on the stored
