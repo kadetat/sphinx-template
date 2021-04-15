@@ -212,7 +212,7 @@ Django also provides a built in session management system, which handles
 server-side session information and abstracting the passing of cookies as
 mechanisms for session support. It also can support the concepts of users and
 groups [#f3]_. These functionalities are supported by the models.user class
-which comes with Django out-of-the-box. The fields in the User object includes [#f4]_:
+which comes with Django out-of-the-box. The fields in the ``User`` object includes [#f4]_:
 
     * ``username`` (required)
     * ``first_name`` (optional)
@@ -227,7 +227,7 @@ which comes with Django out-of-the-box. The fields in the User object includes [
     * ``last_login``
     * ``date_joined``
 
-The models.user class also has methods: [#f4]_
+The ``models.user`` class also has methods: [#f4]_
 
     * ``get_username()``
     * ``set_password(raw_password)``
