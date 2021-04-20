@@ -116,12 +116,12 @@ change the visual side of the site, and vice-versa.
 A second advantage is Django apps all have a consistent structure. This allows
 teams running big web applications using Django to bring in different developers,
 and as long as those developers are experienced Django developers, they will be
-able to quickly orient themselves since all Django projects have consistent
+able to quickly orient themselves since all Django projects have similar
 structure.
 
 A third advantage of the framework is it allows the web application to be easily
 pluggable, which is where Django really excels [#f2]_. When installing
-Django, many of these plug-ins you need to build a web application
+Django, many of the plug-ins you need to build a web application
 are automatically installed, including an ORM, a template library, web security
 features, an administration interface, and other support libraries and useful
 applications [#f3]_.
@@ -198,7 +198,7 @@ This type of attack lets a malicious user to perform actions using the credentia
 of another unknowing user. When enabled and used correctly, Django can protect
 against this attack by checking for a cookie in each POST request [#f6]_.
 
-The third common web-attack Django protects against in SQL injection. SQL
+The third common web-attack Django protects against is SQL injection. SQL
 injection occurs when a malicious user can somehow execute SQL code on the
 web application's database. Django protects against this attack by constructing
 Django querysets using query parameterization [#f6]_. Django allows the developers the
@@ -208,7 +208,7 @@ ability to write raw SQL but it should only be used if absolutely necessary.
 Account Management & Authentication
 -----------------------------------
 
-Django also provides a built in session management system, which handles
+Django also provides a built in session management system. This system handles
 server-side session information and abstracting the passing of cookies as
 mechanisms for session support. It also can support the concepts of users and
 groups [#f3]_. These functionalities are supported by the models.user class
@@ -248,7 +248,7 @@ One of the most powerful parts of Django is its built in admin panel, which real
 makes Django shine [#f1]_. The admin panel is a web application that provides an
 interface for the user to manage data. This allows developers to quickly perform
 CRUD operations without writing extra code. A couple lines of code in the setup
-enables this feature, allowing a quick setup of this powerful tool. A developer
+enables this powerful tool. A developer
 can also enable a login requirement to access the admin panel, and by default,
 a user must be a superuser to be able to gain access [#f9]_.
 
